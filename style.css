@@ -25,9 +25,7 @@ body{
 .container{
    height: 100vh;
   width: 100vw;
- 
-  padding: 2rem;
-  
+
   margin: 2rem;
   display: flex;
   justify-content: center;
@@ -70,7 +68,6 @@ main{
       padding: .8rem;
       border: none;
       border-radius: 20px;
-
       margin: 0 auto;
    }
 }
@@ -80,23 +77,34 @@ main{
 }
 .boxb{
     background-color: var(--dark-cyan);
+    button{
+     color: var(--dark-cyan);
+    }
     
 }
 .boxc{
     background-color: var(--very-dark-cyan);
     border-radius: 0 2% 2% 0;
+    button{
+        color: var(--very-dark-cyan);
+    }
 }
 @media (max-width: 700px) {
     main {
         flex-direction: column;
         min-width:150%;
     }
-
     .box {
         max-width:60%;
         height: auto;
     }
     .footer{
         display: inline;
+    }
+    .boxa{
+          border-radius: 2% 2% 0 0;
+    }
+    .boxc{
+        border-radius: 0 0 2% 2%;
     }
 }
